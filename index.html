@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Hospital Patient Appointment Management Website">
+
+    <meta name="author" content="Hospital">
+
+    <title>CarePlus Hospital | Appointments</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CarePlus Hospital</h1>
+        <p>Your Health, Our Priority</p>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <!-- Welcome Section -->
+        <section>
+            <h2>Welcome to CarePlus Hospital</h2>
+            <p>
+                We provide quality healthcare with experienced doctors,
+                modern facilities and patient-friendly services.
+            </p>
+        </section>
+
+        <!-- Hospital Services -->
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Cardiology</h3>
+                <p>Specialized care for heart-related conditions.</p>
+            </article>
+
+            <article>
+                <h3>Neurology</h3>
+                <p>Diagnosis and treatment of nervous system disorders.</p>
+            </article>
+
+            <article>
+                <h3>General Medicine</h3>
+                <p>Complete healthcare and general medical consultations.</p>
+            </article>
+        </section>
+
+        <!-- Doctor Information -->
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+
+            <article>
+                <h3>Dr. Ananya Sharma</h3>
+                <p>Cardiologist</p>
+                <p>Experience: 12 years</p>
+            </article>
+
+            <article>
+                <h3>Dr. Rahul Verma</h3>
+                <p>Neurologist</p>
+                <p>Experience: 10 years</p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya Reddy</h3>
+                <p>General Physician</p>
+                <p>Experience: 8 years</p>
+            </article>
+        </section>
+
+        <!-- Additional Information -->
+        <aside>
+            <h2>Important Information</h2>
+            <p>
+                Please arrive 15 minutes before your scheduled appointment.
+            </p>
+        </aside>
+
+        <!-- Appointment Form -->
+        <section id="appointment">
+
+            <h2>Book a Patient Appointment</h2>
+
+            <form id="appointmentForm">
+
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName"
+                    name="patientName" required
+                    autocomplete="name"
+                    placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"
+                    name="email" required
+                    autocomplete="email"
+                    placeholder="Enter your email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone"
+                    name="phone" required
+                    autocomplete="tel"
+                    pattern="[0-9]{10}"
+                    inputmode="numeric"
+                    maxlength="10"
+                    placeholder="Enter 10-digit phone number">
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date"
+                    name="date" required>
+
+                <label for="department">Select Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Choose Department</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="General Medicine">General Medicine</option>
+                </select>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Choose Doctor</option>
+                    <option value="Dr. Ananya Sharma">Dr. Ananya Sharma</option>
+                    <option value="Dr. Rahul Verma">Dr. Rahul Verma</option>
+                    <option value="Dr. Priya Reddy">Dr. Priya Reddy</option>
+                </select>
+
+                <fieldset>
+                    <legend>Appointment Type:</legend>
+
+                    <input type="radio" id="new"
+                        name="appointmentType" value="New" required>
+                    <label for="new">New Patient</label>
+
+                    <input type="radio" id="followup"
+                        name="appointmentType" value="Follow-up">
+                    <label for="followup">Follow-up</label>
+                </fieldset>
+
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message"
+                    rows="4"
+                    placeholder="Enter any additional information"></textarea>
+
+                <button type="submit">Book Appointment</button>
+
+            </form>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CarePlus Hospital. All Rights Reserved.</p>
+        <p>Contact: careplus@example.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

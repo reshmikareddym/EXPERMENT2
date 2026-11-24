@@ -1,0 +1,198 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #E9DDF5;
+    color: #443650;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #B69AD8, #E5A6C4);
+    text-align: center;
+    padding: 35px 20px;
+    color: #382B47;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #382B47;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+section {
+    background-color: #F8EFF9;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(70, 45, 90, 0.12);
+}
+
+h2 {
+    color: #8056A5;
+    margin-bottom: 15px;
+}
+
+/* Service and Doctor Cards */
+article {
+    background-color: #DCCAF3;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 6px solid #9571C2;
+    border-radius: 10px;
+}
+
+article:nth-of-type(2) {
+    background-color: #F4CEDD;
+    border-left-color: #D77FA4;
+}
+
+article:nth-of-type(3) {
+    background-color: #CDEBDD;
+    border-left-color: #72B99A;
+}
+
+article h3 {
+    color: #513C69;
+}
+
+/* Information Section */
+aside {
+    background-color: #F8DCC1;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #D99D64;
+}
+
+/* Appointment Form */
+#appointment {
+    background-color: #F5E0EA;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C7A9D9;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #FFF9FD;
+    color: #443650;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #C7A9D9;
+    border-radius: 10px;
+    background-color: #EDE1F5;
+}
+
+fieldset input {
+    width: auto;
+    margin: 10px 5px;
+    accent-color: #8056A5;
+}
+
+fieldset label {
+    margin-right: 15px;
+}
+
+/* Button */
+button {
+    background-color: #956DB8;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #765095;
+}
+
+/* Keyboard Focus */
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #69418B;
+    outline-offset: 3px;
+}
+
+/* Status Message */
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #386B52;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(120deg, #B69AD8, #E5A6C4);
+    color: #382B47;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
